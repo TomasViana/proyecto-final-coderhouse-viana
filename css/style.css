@@ -1,0 +1,352 @@
+* {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(to right, darkblue, blue);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  height: auto;
+}
+
+.grid-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.conteiner {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding-left: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 100%;
+  flex: 200px;
+}
+
+nav {
+  margin-left: 80px;
+}
+
+.nav__list {
+  list-style-type: none;
+}
+
+.nav__link {
+  color: aliceblue;
+  text-decoration: none;
+  margin: 0 0 0 10px;
+}
+
+.nav__link:hover {
+  opacity: 0.5;
+}
+
+main {
+  background: linear-gradient(
+    to right,
+    rgba(30, 216, 230, 1),
+    rgba(130, 216, 230, 1)
+  );
+  padding-right: 20px;
+}
+
+img {
+  max-width: 90%;
+}
+
+.noticias {
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+  gap: 20px;
+}
+
+.news {
+  text-align: center;
+}
+
+.news a {
+  text-decoration: none;
+}
+
+.news a img {
+  display: block;
+}
+
+.news a p {
+  padding: 30px;
+  text-align: left;
+}
+
+.cal {
+  text-align: center;
+  padding: 1px;
+}
+
+.cal a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.history__box {
+  padding: 10px;
+  display: inline-block;
+}
+
+.history__box p {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+.history__img {
+  padding: 2rem;
+  width: auto;
+}
+
+.primer__titulo {
+  margin: 0;
+  font-size: x-large;
+}
+
+.trofeos__box a {
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px black;
+}
+
+.trofeos__box a img {
+  text-align: center;
+  text-decoration: none;
+}
+
+.trofeos__box a article {
+  width: 100%;
+}
+
+.trofeos__box a p {
+  padding: 5px;
+}
+
+.trofeo__description {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.nac {
+  text-transform: uppercase;
+}
+
+.plantel__title {
+  padding: 20px;
+}
+
+.plantel {
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.plantel img {
+  width: 100%;
+  border-color: black;
+}
+
+table {
+  justify-content: space-around;
+  display: flex;
+}
+
+th {
+  text-decoration: underline;
+}
+
+td {
+  padding: 10px;
+
+  text-align: center;
+}
+
+.contacto__form {
+  padding: 0 0 20px 80px;
+}
+
+.contacto__label {
+  font-size: medium;
+}
+
+#consulta {
+  height: 100px;
+  width: 300px;
+}
+
+h1,
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: 80px;
+  font-size: medium;
+  padding: 10px;
+}
+
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h4 {
+  font-size: large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  background: linear-gradient(to right, darkblue, blue);
+  padding-top: 1rem;
+  height: 4rem;
+}
+
+.footer-sm {
+  color: aliceblue;
+}
+
+.footer-sm__icons {
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.footer-sm__sponsor {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.footer-sm a i {
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+/*
+  .grid-not-cabecera {
+    display: grid;
+    grid-template-columns: auto 960px auto;
+    grid-template-rows: repeat(4, auto);
+  }
+  */
+
+@media (min-width: 768px) {
+  .conteiner {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1320px;
+  }
+
+  nav {
+    margin-left: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  section {
+    padding: 2rem;
+    margin: 10px;
+  }
+
+  h1 {
+    padding: 0;
+    margin-left: 0;
+    font-size: xx-large;
+  }
+  h2 {
+    padding: 0;
+    margin-left: 0;
+    font-size: x-large;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .trofeos__title {
+    padding: 10px;
+    margin: 0;
+  }
+
+  table {
+    justify-content: space-around;
+    display: flex;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  th {
+    font-size: 25px;
+  }
+
+  .contacto__label {
+    font-size: 20px;
+  }
+
+  #consulta {
+    height: 200px;
+    width: 500px;
+  }
+
+  .contacto__input {
+    width: 250px;
+  }
+
+  .plantel {
+    width: 90%;
+  }
+
+  .contacto__form {
+    padding: 15px;
+  }
+
+  .btn {
+    border: solid 0.5px black;
+    border-radius: 50rem;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    width: 6rem;
+    height: 2rem;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  .btn:hover {
+    color: white;
+    background-color: blue;
+    transition: all 1s;
+  }
+}
