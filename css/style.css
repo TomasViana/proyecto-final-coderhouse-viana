@@ -19,7 +19,7 @@ header {
   grid-template-rows: auto 1fr auto;
 }
 
-.conteiner {
+.container {
   margin: 0 auto;
   max-width: 1320px;
   padding-left: 20px;
@@ -169,6 +169,12 @@ img {
   border-color: black;
 }
 
+.plantel a {
+  text-decoration: none;
+  text-align: center;
+  font-size: larger;
+}
+
 table {
   justify-content: space-around;
   display: flex;
@@ -254,7 +260,7 @@ footer {
   */
 
 @media (min-width: 768px) {
-  .conteiner {
+  .container {
     width: 80%;
     margin: 0 auto;
     max-width: 1320px;
