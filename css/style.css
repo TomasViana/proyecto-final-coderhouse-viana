@@ -13,46 +13,21 @@ header {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .grid-container {
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1320px;
-  padding-left: 20px;
+.menu {
+  justify-content: end;
 }
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.col {
-  width: 100%;
-  flex: 200px;
-}
-
-nav {
-  margin-left: 80px;
-}
-
-.nav__list {
-  list-style-type: none;
-}
-
 .nav__link {
   color: aliceblue;
-  text-decoration: none;
-  margin: 0 0 0 10px;
-}
-
-.nav__link:hover {
-  opacity: 0.5;
 }
 
 main {
@@ -91,31 +66,6 @@ img {
 .news a p {
   padding: 30px;
   text-align: left;
-}
-
-.cal {
-  text-align: center;
-  padding: 1px;
-}
-
-.cal a {
-  padding: 10px;
-  text-decoration: none;
-}
-
-.history__box {
-  padding: 10px;
-  display: inline-block;
-}
-
-.history__box p {
-  display: flex;
-  width: 100%;
-  padding: 20px;
-}
-.history__img {
-  padding: 2rem;
-  width: auto;
 }
 
 .primer__titulo {
@@ -175,56 +125,6 @@ img {
   font-size: larger;
 }
 
-table {
-  justify-content: space-around;
-  display: flex;
-}
-
-th {
-  text-decoration: underline;
-}
-
-td {
-  padding: 10px;
-
-  text-align: center;
-}
-
-.contacto__form {
-  padding: 0 0 20px 80px;
-}
-
-.contacto__label {
-  font-size: medium;
-}
-
-#consulta {
-  height: 100px;
-  width: 300px;
-}
-
-h1,
-h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-left: 80px;
-  font-size: medium;
-  padding: 10px;
-}
-
-h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-h4 {
-  font-size: large;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
-}
-
 footer {
   background: linear-gradient(to right, darkblue, blue);
   padding-top: 1rem;
@@ -249,110 +149,4 @@ footer {
 .footer-sm a i {
   font-size: 2rem;
   color: aliceblue;
-}
-
-/*
-  .grid-not-cabecera {
-    display: grid;
-    grid-template-columns: auto 960px auto;
-    grid-template-rows: repeat(4, auto);
-  }
-  */
-
-@media (min-width: 768px) {
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1320px;
-  }
-
-  nav {
-    margin-left: 0;
-  }
-
-  .nav__list {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  main {
-    padding: 30px;
-  }
-
-  section {
-    padding: 2rem;
-    margin: 10px;
-  }
-
-  h1 {
-    padding: 0;
-    margin-left: 0;
-    font-size: xx-large;
-  }
-  h2 {
-    padding: 0;
-    margin-left: 0;
-    font-size: x-large;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  .trofeos__title {
-    padding: 10px;
-    margin: 0;
-  }
-
-  table {
-    justify-content: space-around;
-    display: flex;
-    margin: 5px;
-    font-size: 20px;
-  }
-
-  th {
-    font-size: 25px;
-  }
-
-  .contacto__label {
-    font-size: 20px;
-  }
-
-  #consulta {
-    height: 200px;
-    width: 500px;
-  }
-
-  .contacto__input {
-    width: 250px;
-  }
-
-  .plantel {
-    width: 90%;
-  }
-
-  .contacto__form {
-    padding: 15px;
-  }
-
-  .btn {
-    border: solid 0.5px black;
-    border-radius: 50rem;
-    background: white;
-    cursor: pointer;
-    font-weight: 600;
-    text-transform: uppercase;
-    position: relative;
-    width: 6rem;
-    height: 2rem;
-    overflow: hidden;
-    transition: all 0.5s;
-  }
-
-  .btn:hover {
-    color: white;
-    background-color: blue;
-    transition: all 1s;
-  }
 }

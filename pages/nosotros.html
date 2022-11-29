@@ -25,129 +25,132 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav>
-          <a href="../Index.html"
+    <header class="fixed top">
+      <nav class="navbar navbar-expand-md">
+        <div class="container">
+          <a class="nav-item" href="index.html"
             ><img
               src="../img/Boca_escudo.png"
               alt="Logo de la Pagina"
               width="40px"
               height="40px"
           /></a>
-
-          <ul class="nav__list">
-            <li><a class="nav__link" href="../index.html">Inicio</a></li>
-            <li>
-              <a class="nav__link" href="historia.html">Historia</a>
-            </li>
-            <li><a class="nav__link" href="titulos.html">Titulos</a></li>
-            <li><a class="nav__link" href="plantel.html">Plantel</a></li>
-            <li>
-              <a class="nav__link" href="nosotros.html">Nosotros</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav__link"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="titulos.html">Titulos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link" href="plantel.html">Plantel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav__link active" href="nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>Nosotros</h1>
-          </div>
-        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Cargo</th>
+              <th scope="col">Nombre</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <td>Presidente</td>
+              <td>Jorge Amor Ameal</td>
+            </tr>
+            <tr>
+              <td>Vicepresidente 2°</td>
+              <td>Juan Román Riquelme</td>
+            </tr>
+            <tr>
+              <td>Vicepresidente 3°</td>
+              <td>Adriana Bravo</td>
+            </tr>
+            <tr>
+              <td>Secretario General</td>
+              <td>Ricardo Rosica</td>
+            </tr>
+            <tr>
+              <td>Tesorero</td>
+              <td>Carlos Montero</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <table>
-        <tr>
-          <th>Cargo</th>
-          <th>Nombre</th>
-        </tr>
-        <tr>
-          <td>Presidente</td>
-          <td>Jorge Amor Ameal</td>
-        </tr>
-        <tr>
-          <td>Vicepresidente 2°</td>
-          <td>Juan Román Riquelme</td>
-        </tr>
-        <tr>
-          <td>Vicepresidente 3°</td>
-          <td>Adriana Bravo</td>
-        </tr>
-        <tr>
-          <td>Secretario General</td>
-          <td>Ricardo Rosica</td>
-        </tr>
-        <tr>
-          <td>Tesorero</td>
-          <td>Carlos Montero</td>
-        </tr>
-      </table>
 
       <section class="contacto">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Contactenos</h2>
-            </div>
+          <h2>Contactenos</h2>
+
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Nombre y Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Telefono/Celular</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">E-mail </label>
+          </div>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 200px"
+            ></textarea>
+            <label for="floatingTextarea2">Comentarios</label>
           </div>
         </div>
-        <form action="">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="contacto__form">
-                  <label class="contacto__label" for="name"
-                    >Nombre y Apellido
-                  </label>
-                  <br />
-                  <input class="contacto__input" type="text" />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="contacto__form">
-                  <label class="contacto__label" for="name"
-                    >Telefono/Celular/Whatsapp</label
-                  >
-                  <br />
-                  <input class="contacto__input" type="text" />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="contacto__form">
-                  <label class="contacto__label" for="name">E-mail</label>
-                  <br />
-                  <input class="contacto__input" type="email" />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="contacto__form">
-                  <label class="contacto__label" for="name"
-                    >Consultas o Comentarios</label
-                  >
-                  <br />
-                  <input id="consulta" type="text" />
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="contacto__form">
-                  <button class="btn">Enviar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
       </section>
     </main>
 

@@ -24,33 +24,60 @@
   <body>
     <div class="grid-container">
       <header class="fixed top">
-        <div class="container">
-          <nav>
-            <a href="Index.html"
+        <nav class="navbar navbar-expand-md">
+          <div class="container">
+            <a class="nav-item" href="index.html"
               ><img
                 src="img/Boca_escudo.png"
                 alt="Logo de la Pagina"
                 width="40px"
                 height="40px"
             /></a>
-
-            <ul class="nav__list">
-              <li><a class="nav__link" href="index.html">Inicio</a></li>
-              <li>
-                <a class="nav__link" href="pages/historia.html">Historia</a>
-              </li>
-              <li>
-                <a class="nav__link" href="pages/titulos.html">Titulos</a>
-              </li>
-              <li>
-                <a class="nav__link" href="pages/plantel.html">Plantel</a>
-              </li>
-              <li>
-                <a class="nav__link" href="pages/nosotros.html">Nosotros</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav__link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__link" href="pages/historia.html"
+                    >Historia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__link" href="pages/titulos.html"
+                    >Titulos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__link" href="pages/plantel.html"
+                    >Plantel</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav__link" href="pages/nosotros.html"
+                    >Nosotros</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
 
       <main>
@@ -193,3 +220,20 @@
     ></script>
   </body>
 </html>
+
+<!-- 
+  div class row g-4
+  div class col-md6 col-lg-4
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
