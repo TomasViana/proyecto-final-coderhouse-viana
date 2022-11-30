@@ -26,86 +26,18 @@ a {
 .menu {
   justify-content: end;
 }
+
 .nav__link {
   color: aliceblue;
 }
 
 main {
-  background: linear-gradient(
-    to right,
-    rgba(30, 216, 230, 1),
-    rgba(130, 216, 230, 1)
-  );
-  padding-right: 20px;
+  background: rgb(246, 246, 255);
+  padding: 5rem;
 }
 
 img {
-  max-width: 90%;
-}
-
-.noticias {
-  margin-left: 80px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-  gap: 20px;
-}
-
-.news {
-  text-align: center;
-}
-
-.news a {
-  text-decoration: none;
-}
-
-.news a img {
-  display: block;
-}
-
-.news a p {
-  padding: 30px;
-  text-align: left;
-}
-
-.primer__titulo {
-  margin: 0;
-  font-size: x-large;
-}
-
-.trofeos__box a {
-  display: flex;
-  text-align: center;
-  text-decoration: none;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-bottom: solid 1px black;
-}
-
-.trofeos__box a img {
-  text-align: center;
-  text-decoration: none;
-}
-
-.trofeos__box a article {
-  width: 100%;
-}
-
-.trofeos__box a p {
-  padding: 5px;
-}
-
-.trofeo__description {
-  font-size: 1.5rem;
-  font-weight: 200;
-}
-
-.nac {
-  text-transform: uppercase;
-}
-
-.plantel__title {
-  padding: 20px;
+  max-width: 100%;
 }
 
 .plantel {
