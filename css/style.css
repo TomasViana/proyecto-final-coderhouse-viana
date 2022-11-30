@@ -38,6 +38,12 @@ main {
 
 img {
   max-width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.02);
 }
 
 .plantel {
