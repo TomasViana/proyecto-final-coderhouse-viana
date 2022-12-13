@@ -1,1 +1,77 @@
+* {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  background: rgb(246, 246, 255);
+  padding: 5rem;
+}
+
+header {
+  background: linear-gradient(to right, darkblue, blue);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  height: auto;
+}
+
+.nav__link {
+  color: aliceblue;
+}
+
+img {
+  max-width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+img:hover {
+  transform: scale(1.02);
+}
+
+.plantel {
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.plantel img {
+  width: 100%;
+  border-color: black;
+}
+.plantel img a {
+  text-decoration: none;
+  text-align: center;
+  font-size: larger;
+}
+
+footer {
+  background: linear-gradient(to right, darkblue, blue);
+  padding-top: 1rem;
+  height: 4rem;
+}
+footer .footer-sm {
+  color: aliceblue;
+}
+footer .footer-sm a i {
+  font-size: 2rem;
+  color: aliceblue;
+}
+footer .footer-sm__icons {
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+footer .footer-sm__sponsor {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
