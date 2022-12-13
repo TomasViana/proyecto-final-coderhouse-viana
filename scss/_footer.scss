@@ -1,0 +1,21 @@
+footer {
+  background: linear-gradient(to right, darkblue, blue);
+  padding-top: 1rem;
+  height: 4rem;
+  .footer-sm {
+    color: aliceblue;
+    a i {
+      font-size: 2rem;
+      color: aliceblue;
+    }
+  }
+  .footer-sm__icons {
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .footer-sm__sponsor {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+}

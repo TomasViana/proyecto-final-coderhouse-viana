@@ -1,0 +1,8 @@
+img {
+  max-width: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+  &:hover {
+    transform: scale(1.02);
+  }
+}

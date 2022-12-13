@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-coder-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasViana/proyecto-final-coderhouse-viana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasViana/proyecto-final-coderhouse-viana/issues"
+  },
+  "homepage": "https://github.com/TomasViana/proyecto-final-coderhouse-viana#readme"
+}
