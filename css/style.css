@@ -16,6 +16,10 @@ main {
   padding: 5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   background: linear-gradient(to right, darkblue, blue);
   padding: 10px;
