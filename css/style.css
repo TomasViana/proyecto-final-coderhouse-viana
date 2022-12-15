@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .grid-container {
   margin: 0 auto;
   display: grid;
@@ -26,9 +27,11 @@ header {
   top: 0;
   height: auto;
 }
+
 .nav__link {
   color: aliceblue;
 }
+
 img {
   max-width: 100%;
   transition: 0.5s;
@@ -37,15 +40,18 @@ img {
 img:hover {
   transform: scale(1.02);
 }
+
 .plantel {
   margin-left: 80px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
 .plantel img {
   width: 100%;
   border-color: black;
+}
+.plantel img a {
+  font-size: larger;
 }
 
 footer {
@@ -56,19 +62,22 @@ footer {
 footer .footer-sm {
   color: aliceblue;
 }
-
 footer .footer-sm a i {
   font-size: 2rem;
   color: aliceblue;
 }
-
 footer .footer-sm__icons {
   text-align: center;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-
 footer .footer-sm__sponsor {
   text-align: center;
   padding-top: 1.5rem;
 }
+
+h4 {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
