@@ -78,10 +78,14 @@ footer .footer-sm__sponsor {
   padding-top: 1.5rem;
 }
 
-h4 {
+h4, .trofeos__copa {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
+}
+
+.trofeos__copa {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

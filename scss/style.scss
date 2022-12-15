@@ -8,3 +8,8 @@
 h4 {
   @include textos(center);
 }
+
+.trofeos__copa {
+  @extend h4;
+  text-decoration: underline;
+}
