@@ -50,8 +50,10 @@ img:hover {
   width: 100%;
   border-color: black;
 }
-.plantel img a {
-  font-size: larger;
+.plantel p {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 
 footer {
@@ -77,7 +79,9 @@ footer .footer-sm__sponsor {
 }
 
 h4 {
-  text-decoration: none;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

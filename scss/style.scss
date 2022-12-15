@@ -1,10 +1,10 @@
+@import "mixins";
 @import "globals";
 @import "header";
 @import "img";
 @import "plantel";
 @import "footer";
-@import "mixins";
 
 h4 {
-  text-decoration: none;
+  @include textos(center);
 }

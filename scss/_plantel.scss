@@ -5,9 +5,9 @@
   img {
     width: 100%;
     border-color: black;
+  }
 
-    a {
-      font-size: larger;
-    }
+  p {
+    @include textos(center);
   }
 }
