@@ -1,81 +1,18 @@
-* {
-  color: rgb(0, 0, 0);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 10 |       @include text($var: center);
+ *    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\_plantel.scss 10:7  @import
+ *   scss\style.scss 4:9      root stylesheet */
 
-.grid-container {
-  margin: 0 auto;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 10 \2502        @include text($var: center);\d\a    \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\_plantel.scss 10:7  @import\a   scss\\style.scss 4:9      root stylesheet";
 }
-
-main {
-  background: rgb(246, 246, 255);
-  padding: 5rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-header {
-  background: linear-gradient(to right, darkblue, blue);
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  height: auto;
-}
-
-.nav__link {
-  color: aliceblue;
-}
-
-img {
-  max-width: 100%;
-  transition: 0.5s;
-  object-fit: cover;
-}
-img:hover {
-  transform: scale(1.02);
-}
-
-.plantel {
-  margin-left: 80px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.plantel img {
-  width: 100%;
-  border-color: black;
-}
-.plantel img a {
-  text-decoration: none;
-  text-align: center;
-  font-size: larger;
-}
-
-footer {
-  background: linear-gradient(to right, darkblue, blue);
-  padding-top: 1rem;
-  height: 4rem;
-}
-footer .footer-sm {
-  color: aliceblue;
-}
-footer .footer-sm a i {
-  font-size: 2rem;
-  color: aliceblue;
-}
-footer .footer-sm__icons {
-  text-align: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-footer .footer-sm__sponsor {
-  text-align: center;
-  padding-top: 1.5rem;
-}
-
-/*# sourceMappingURL=style.css.map */

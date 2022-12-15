@@ -7,8 +7,7 @@
     border-color: black;
 
     a {
-      text-decoration: none;
-      text-align: center;
+      @include text($var: center);
       font-size: larger;
     }
   }
