@@ -43,8 +43,6 @@ img:hover {
 
 .plantel {
   margin-left: 80px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .plantel img {
   width: 100%;
@@ -78,7 +76,8 @@ footer .footer-sm__sponsor {
   padding-top: 1.5rem;
 }
 
-h4, .trofeos__copa {
+h4,
+.trofeos__copa {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
